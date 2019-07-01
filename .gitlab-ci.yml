@@ -1,0 +1,29 @@
+image: node:10
+
+cache:
+  paths:
+  - node_modules/
+
+stages:
+  - test
+  - build
+  - pages
+
+test:
+  stage: test
+  script:
+   - yarn
+   - yarn test
+
+build:
+  stage: build
+  script:
+   - yarn
+   - yarn build
+
+pages:
+  stage: pages
+  script:
+   - yarn
+   - yarn build:demo
+   - yarn deploy
