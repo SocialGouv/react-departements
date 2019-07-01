@@ -1,0 +1,32 @@
+{
+  "name": "react-departements",
+  "description": "Une carte de France où certains departements peuvent être colorés.",
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "license": "Apache 2.0",
+  "devDependencies": {
+    "@babel/cli": "^7.4.4",
+    "@babel/core": "^7.4.5",
+    "@babel/plugin-proposal-object-rest-spread": "^7.4.4",
+    "@babel/plugin-transform-regenerator": "^7.4.5",
+    "@babel/plugin-transform-runtime": "^7.4.4",
+    "babel-plugin-lodash": "^3.3.4",
+    "gh-pages": "^2.0.1",
+    "parcel-bundler": "^1.10"
+  },
+  "dependencies": {
+    "prop-types": "^15.7.2",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "react-svgmt": "^1.1.8"
+  },
+  "scripts": {
+    "clean": "rm -rf ./dist",
+    "clean:demo": "rm -rf ./example/dist",
+    "start": "parcel watch ./src/index.js --out-dir ./dist",
+    "start:demo": "parcel ./example/src/index.html --out-dir ./example/dist",
+    "build": "parcel build ./src/index.js --global minimum-parcel-lib",
+    "build:demo": "parcel build ./example/src/index.html --out-dir ./example/dist --public-url ./",
+    "deploy": "gh-pages -d ./example/dist"
+  }
+}

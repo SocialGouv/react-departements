@@ -1,0 +1,12 @@
+
+{
+  "presets": [
+    ["@babel/preset-env", { "useBuiltIns": "usage" }]
+  ],
+  "plugins": [
+    "lodash",
+    "@babel/proposal-class-properties",
+    "@babel/syntax-object-rest-spread",
+    "@babel/transform-runtime",
+  ]
+}
