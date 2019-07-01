@@ -1,5 +1,7 @@
 # react-departements [![pipeline status](https://gitlab.factory.social.gouv.fr/SocialGouv/react-departements/badges/master/pipeline.svg)](https://gitlab.factory.social.gouv.fr/SocialGouv/react-departements/commits/master)
 
+[![NPM](https://nodei.co/npm/@socialgouv/react-departements.png?downloads=true&downloadRank=true&stars=true)](https://www.npmjs.com/package/@socialgouv/react-departements)
+
 Une carte de France où certains departements peuvent être colorés.
 
 <img src="./demo.png" alt="demo" width="300"/>
