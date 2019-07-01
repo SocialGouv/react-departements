@@ -1,9 +1,13 @@
 {
-  "name": "react-departements",
+  "name": "@socialgouv/react-departements",
   "description": "Une carte de France où certains departements peuvent être colorés.",
   "version": "1.0.0",
   "main": "dist/index.js",
   "license": "Apache-2.0",
+  "files": [
+    "README.md",
+    "dist"
+  ],
   "devDependencies": {
     "@babel/cli": "^7.4.4",
     "@babel/core": "^7.4.5",
@@ -12,7 +16,6 @@
     "babel-jest": "^24.8.0",
     "gh-pages": "^2.0.1",
     "jest": "^24.8.0",
-    "jest-raw-loader": "^1.0.1",
     "parcel-bundler": "^1.10",
     "react-test-renderer": "^16.8.6"
   },
@@ -31,11 +34,5 @@
     "build": "parcel build ./src/index.js --global minimum-parcel-lib",
     "build:demo": "parcel build ./example/src/index.html --out-dir ./example/dist --public-url ./",
     "deploy": "gh-pages -d ./example/dist"
-  },
-  "jest": {
-    "transform": {
-      "^.+\\.jsx?$": "babel-jest",
-      "^.+\\.svg$": "jest-raw-loader"
-    }
   }
 }

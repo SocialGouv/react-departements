@@ -1,7 +1,9 @@
 import React from "react";
 import { SvgLoader, SvgProxy } from "react-svgmt";
 
-import Carte from "./Carte.svg";
+import Carte from "./Carte";
+
+console.log("Carte", Carte);
 
 const normalizeDpt = dpt => {
   if (isNaN(dpt)) {
@@ -14,7 +16,7 @@ const normalizeDpt = dpt => {
 };
 
 const France = ({ color, highlightColor, departements }) => (
-  <SvgLoader path={Carte}>
+  <SvgLoader svgXML={Carte}>
     <SvgProxy selector="#carte" fill={color} />
     {departements.map(dpt => (
       <SvgProxy

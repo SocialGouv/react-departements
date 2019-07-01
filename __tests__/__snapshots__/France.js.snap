@@ -3,7 +3,9 @@
 exports[`should colorize dpts 1`] = `
 <SvgLoader
   onSVGReady={[Function]}
-  path="<?xml version=\\"1.0\\" encoding=\\"UTF-8\\"?>
+  path={null}
+  style={null}
+  svgXML="<?xml version=\\"1.0\\" encoding=\\"UTF-8\\"?>
 <svg width=\\"578px\\" height=\\"544px\\" viewBox=\\"0 0 578 544\\" version=\\"1.1\\" xmlns=\\"http://www.w3.org/2000/svg\\" xmlns:xlink=\\"http://www.w3.org/1999/xlink\\">
     <g id=\\"Page-1\\" stroke=\\"none\\" stroke-width=\\"1\\" fill=\\"none\\" fill-rule=\\"evenodd\\">
         <g id=\\"par-commune\\">
@@ -139,8 +141,6 @@ exports[`should colorize dpts 1`] = `
         </g>
     </g>
 </svg>"
-  style={null}
-  svgXML={null}
 >
   <SvgProxy
     fill="#74B4FF"
@@ -168,7 +168,9 @@ exports[`should colorize dpts 1`] = `
 exports[`should normalize corsica 1`] = `
 <SvgLoader
   onSVGReady={[Function]}
-  path="<?xml version=\\"1.0\\" encoding=\\"UTF-8\\"?>
+  path={null}
+  style={null}
+  svgXML="<?xml version=\\"1.0\\" encoding=\\"UTF-8\\"?>
 <svg width=\\"578px\\" height=\\"544px\\" viewBox=\\"0 0 578 544\\" version=\\"1.1\\" xmlns=\\"http://www.w3.org/2000/svg\\" xmlns:xlink=\\"http://www.w3.org/1999/xlink\\">
     <g id=\\"Page-1\\" stroke=\\"none\\" stroke-width=\\"1\\" fill=\\"none\\" fill-rule=\\"evenodd\\">
         <g id=\\"par-commune\\">
@@ -304,8 +306,6 @@ exports[`should normalize corsica 1`] = `
         </g>
     </g>
 </svg>"
-  style={null}
-  svgXML={null}
 >
   <SvgProxy
     fill="#74B4FF"
@@ -328,7 +328,9 @@ exports[`should normalize corsica 1`] = `
 exports[`should normalize dpts<10 1`] = `
 <SvgLoader
   onSVGReady={[Function]}
-  path="<?xml version=\\"1.0\\" encoding=\\"UTF-8\\"?>
+  path={null}
+  style={null}
+  svgXML="<?xml version=\\"1.0\\" encoding=\\"UTF-8\\"?>
 <svg width=\\"578px\\" height=\\"544px\\" viewBox=\\"0 0 578 544\\" version=\\"1.1\\" xmlns=\\"http://www.w3.org/2000/svg\\" xmlns:xlink=\\"http://www.w3.org/1999/xlink\\">
     <g id=\\"Page-1\\" stroke=\\"none\\" stroke-width=\\"1\\" fill=\\"none\\" fill-rule=\\"evenodd\\">
         <g id=\\"par-commune\\">
@@ -464,8 +466,6 @@ exports[`should normalize dpts<10 1`] = `
         </g>
     </g>
 </svg>"
-  style={null}
-  svgXML={null}
 >
   <SvgProxy
     fill="#74B4FF"
