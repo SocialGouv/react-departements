@@ -3,16 +3,18 @@
   "description": "Une carte de France où certains departements peuvent être colorés.",
   "version": "1.0.0",
   "main": "dist/index.js",
-  "license": "Apache 2.0",
+  "license": "Apache-2.0",
   "devDependencies": {
     "@babel/cli": "^7.4.4",
     "@babel/core": "^7.4.5",
-    "@babel/plugin-proposal-object-rest-spread": "^7.4.4",
-    "@babel/plugin-transform-regenerator": "^7.4.5",
-    "@babel/plugin-transform-runtime": "^7.4.4",
-    "babel-plugin-lodash": "^3.3.4",
+    "@babel/preset-env": "^7.4.5",
+    "babel-jest": "^24.8.0",
+    "babel-preset-react": "^6.24.1",
     "gh-pages": "^2.0.1",
-    "parcel-bundler": "^1.10"
+    "jest": "^24.8.0",
+    "jest-raw-loader": "^1.0.1",
+    "parcel-bundler": "^1.10",
+    "react-test-renderer": "^16.8.6"
   },
   "dependencies": {
     "prop-types": "^15.7.2",
@@ -21,6 +23,7 @@
     "react-svgmt": "^1.1.8"
   },
   "scripts": {
+    "test": "jest",
     "clean": "rm -rf ./dist",
     "clean:demo": "rm -rf ./example/dist",
     "start": "parcel watch ./src/index.js --out-dir ./dist",
@@ -28,5 +31,11 @@
     "build": "parcel build ./src/index.js --global minimum-parcel-lib",
     "build:demo": "parcel build ./example/src/index.html --out-dir ./example/dist --public-url ./",
     "deploy": "gh-pages -d ./example/dist"
+  },
+  "jest": {
+    "transform": {
+      "^.+\\.jsx?$": "babel-jest",
+      "^.+\\.svg$": "jest-raw-loader"
+    }
   }
 }
