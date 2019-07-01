@@ -14,6 +14,8 @@ import France from "react-departements";
 
 See [example/src](./example/src).
 
+## Props
+
 | Prop           | type   | usage                                |
 | -------------- | ------ | ------------------------------------ |
 | color          | string | couleur par défaut d'un départements |
