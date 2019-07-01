@@ -16,11 +16,11 @@ See [example/src](./example/src).
 
 ## Props
 
-| Prop           | type   | usage                                |
-| -------------- | ------ | ------------------------------------ |
-| color          | string | couleur par défaut d'un département  |
-| highlightColor | string | couleur du highlight                 |
-| departements   | array  | liste des départements à highlighter |
+| Prop           | type   | usage                                | default |
+| -------------- | ------ | ------------------------------------ | ------- |
+| color          | string | couleur par défaut d'un département  | #74B4FF |
+| highlightColor | string | couleur du highlight                 | #b3ff75 |
+| departements   | array  | liste des départements à highlighter | []      |
 
 ## Source
 
