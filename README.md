@@ -18,9 +18,9 @@ See [example/src](./example/src).
 
 | Prop           | type   | usage                                |
 | -------------- | ------ | ------------------------------------ |
-| color          | string | couleur par défaut d'un départements |
+| color          | string | couleur par défaut d'un département  |
 | highlightColor | string | couleur du highlight                 |
-| departements   | array  | liste des départements à highlight   |
+| departements   | array  | liste des départements à highlighter |
 
 ## Source
 
