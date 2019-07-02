@@ -13,6 +13,7 @@
     "@babel/core": "^7.4.5",
     "@babel/preset-env": "^7.4.5",
     "@babel/preset-react": "^7.0.0",
+    "@socialgouv/eslint-config-react": "^0.9.1",
     "babel-jest": "^24.8.0",
     "gh-pages": "^2.0.1",
     "jest": "^24.8.0",
@@ -36,4 +37,3 @@
     "deploy": "gh-pages -d ./example/dist -r https://gitlab-ci-token:$GH_TOKEN@github.com/SocialGouv/react-departements.git"
   }
 }
-

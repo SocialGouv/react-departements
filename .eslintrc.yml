@@ -1,0 +1,6 @@
+root: true
+extends:
+  - "@socialgouv/eslint-config-react"
+
+rules:
+  prefer-const: error
