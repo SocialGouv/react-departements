@@ -20,3 +20,10 @@ test("should normalize dpts<10", () => {
   const result = renderer.render(<France departements={[5, 6, 7, 8]} />);
   expect(result).toMatchSnapshot();
 });
+
+
+test("should highlight petite couronne", () => {
+  const renderer = new ShallowRenderer();
+  const result = renderer.render(<France departements={[75, 92, 93, 94]} />);
+  expect(result).toMatchSnapshot();
+});
