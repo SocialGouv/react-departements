@@ -30,8 +30,7 @@
   },
   "peerDependencies": {
     "prop-types": "15.x",
-    "react": "16.x",
-    "react-dom": "16.x"
+    "react": "16.x"
   },
   "scripts": {
     "test": "jest",

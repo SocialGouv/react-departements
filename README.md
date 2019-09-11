@@ -1,15 +1,32 @@
-# react-departements [![pipeline status](https://gitlab.factory.social.gouv.fr/SocialGouv/react-departements/badges/master/pipeline.svg)](https://gitlab.factory.social.gouv.fr/SocialGouv/react-departements/commits/master)
+<h1 align="center">
+  <img src="https://github.com/SocialGouv/react-departements/raw/master/demo.png" width="250"/>
+  <p align="center">React Departements</p>
+  <p align="center" style="font-size: 0.5em">🧹Une carte de France où certains departements peuvent être colorés.✨</p>
+</h1>
 
-[![NPM](https://nodei.co/npm/@socialgouv/react-departements.png?downloads=true&downloadRank=true&stars=true)](https://www.npmjs.com/package/@socialgouv/react-departements)
+<p align="center">
+  <a href="https://gitlab.factory.social.gouv.fr/SocialGouv/react-departements/pipelines"><img src="https://gitlab.factory.social.gouv.fr/SocialGouv/react-departements/badges/master/pipeline.svg" alt="Gitlab Master Build Status"></a>
+  <a href="https://travis-ci.com/SocialGouv/react-departements"><img src="https://travis-ci.com/SocialGouv/react-departements.svg?branch=master" alt="Travis Build Status"></a>
+  <a href="https://opensource.org/licenses/Apache-2.0"><img src="https://img.shields.io/badge/License-Apache--2.0-yellow.svg" alt="License: Apache-2.0"></a>
+  <a href="https://www.npmjs.com/package/@socialgouv/react-departements"><img src="https://img.shields.io/npm/v/@socialgouv/react-departements.svg" alt="Npm version"></a> 
+  <br>
+  <a href="https://www.npmjs.com/package/@socialgouv/react-departements"><img src="https://nodei.co/npm/@socialgouv/react-departements.png?downloads=true&downloadRank=true&stars=true" alt="Npm banner"></a> 
+</p>
 
-Une carte de France où certains departements peuvent être colorés.
-
-<img src="./demo.png" alt="demo" width="300"/>
+<br>
+<br>
+<br>
+<br>
 
 ## Installation
 
 ```sh
-yarn add @socialgouv/react-departements
+$ npm install @socialgouv/react-departements
+# or
+$ yarn add @socialgouv/react-departements
+
+# `react@16+` and `prop-types@15+` must be installed
+$ yarn add react prop-types
 ```
 
 ## Usage
