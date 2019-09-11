@@ -1,32 +1,59 @@
 image: node:10
 
-cache:
-  paths:
-  - node_modules/
-
 stages:
-  - test
+  - Install
+  - Test
   - build
-  - pages
+  - Release
 
-test:
-  stage: test
+Isntall:
+  stage: Install
   script:
-   - yarn
-   - yarn test
+    - yarn config set cache-folder $CI_PROJECT_DIR/.yarn
+    - yarn --frozen-lockfile
+    - yarn build
+  cache:
+    key: ${CI_COMMIT_REF_SLUG}
+    paths:
+      - $CI_PROJECT_DIR/.yarn
+      - node_modules/
+  artifacts:
+    expire_in: "1 day"
+    paths:
+      - dist
 
-build:
-  stage: build
+Test:
+  stage: Test
   script:
-   - yarn
-   - yarn build
+    - yarn test
 
-pages:
-  stage: pages
+Pages:
+  stage: "Release"
   script:
-   - git config user.email "45039513+SocialGroovyBot@users.noreply.github.com"
-   - git config user.name "SocialGroovyBot"
-   - git remote -v show
-   - yarn
-   - yarn build:demo
-   - yarn deploy
+    - git config user.email "45039513+SocialGroovyBot@users.noreply.github.com"
+    - git config user.name "SocialGroovyBot"
+    - git remote -v show
+    #
+    - yarn build:demo
+    - yarn deploy
+
+Release:
+  stage: "Release"
+  only:
+    - master
+  when: manual
+  variables:
+    GIT_AUTHOR_EMAIL: 45039513+SocialGroovyBot@users.noreply.github.com
+    GIT_AUTHOR_NAME: Social Groovy Bot
+    GIT_COMMITTER_EMAIL: $GIT_AUTHOR_EMAIL
+    GIT_COMMITTER_NAME: $GIT_AUTHOR_NAME
+    RELEASE_URL: https://github.com/${CI_PROJECT_PATH}/releases/download
+  before_script:
+    - git checkout ${CI_COMMIT_REF_NAME}
+    - git remote set-url origin https://${GITHUB_TOKEN}@github.com/${CI_PROJECT_PATH}.git
+  script:
+    - yarn global add semantic-release
+    #
+    - semantic-release
+
+#
