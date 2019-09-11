@@ -1,7 +1,7 @@
 <h1 align="center">
   <img src="https://github.com/SocialGouv/react-departements/raw/master/demo.png" width="250"/>
   <p align="center">React Departements</p>
-  <p align="center" style="font-size: 0.5em">🧹Une carte de France où certains departements peuvent être colorés.✨</p>
+  <p align="center" style="font-size: 0.25em">🧹Une carte de France où certains departements peuvent être colorés.✨</p>
 </h1>
 
 <p align="center">
