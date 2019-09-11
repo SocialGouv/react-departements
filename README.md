@@ -1,8 +1,10 @@
 <h1 align="center">
   <img src="https://github.com/SocialGouv/react-departements/raw/master/demo.png" width="250"/>
   <p align="center">React Departements</p>
-  <p align="center" style="font-size: 0.25em">🧹Une carte de France où certains departements peuvent être colorés.✨</p>
 </h1>
+<h3 align="center">
+  🧹Une carte de France où certains departements peuvent être colorés.✨
+</h3>
 
 <p align="center">
   <a href="https://gitlab.factory.social.gouv.fr/SocialGouv/react-departements/pipelines"><img src="https://gitlab.factory.social.gouv.fr/SocialGouv/react-departements/badges/master/pipeline.svg" alt="Gitlab Master Build Status"></a>
