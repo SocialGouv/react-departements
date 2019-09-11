@@ -27,6 +27,11 @@ Test:
   script:
     - yarn test
 
+Lint:
+  stage: Test
+  script:
+    - yarn lint
+
 Pages:
   stage: "Release"
   script:
