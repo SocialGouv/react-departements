@@ -16,11 +16,11 @@ Isntall:
     key: ${CI_COMMIT_REF_SLUG}
     paths:
       - $CI_PROJECT_DIR/.yarn
-      - node_modules/
   artifacts:
     expire_in: "1 day"
     paths:
       - dist
+      - node_modules
 
 Test:
   stage: Test
