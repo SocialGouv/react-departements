@@ -8,6 +8,9 @@
     "README.md",
     "dist"
   ],
+  "dependencies": {
+    "react-svgmt": "^1.1.8"
+  },
   "devDependencies": {
     "@babel/cli": "^7.4.4",
     "@babel/core": "^7.4.5",
@@ -20,16 +23,19 @@
     "jest": "^24.8.0",
     "parcel-bundler": "^1.10",
     "prettier": "^1.18.2",
+    "prop-types": "^15.7.2",
+    "react": "^16.9.0",
+    "react-dom": "^16.8.6",
     "react-test-renderer": "^16.8.6"
   },
-  "dependencies": {
-    "prop-types": "^15.7.2",
-    "react": "^16.8.6",
-    "react-dom": "^16.8.6",
-    "react-svgmt": "^1.1.8"
+  "peerDependencies": {
+    "prop-types": "15.x",
+    "react": "16.x",
+    "react-dom": "16.x"
   },
   "scripts": {
     "test": "jest",
+    "lint": "eslint src",
     "clean": "rm -rf ./dist",
     "clean:demo": "rm -rf ./example/dist",
     "start": "parcel watch ./src/index.js --out-dir ./dist",

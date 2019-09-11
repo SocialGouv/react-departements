@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from "prop-types";
 import { SvgLoader, SvgProxy } from "react-svgmt";
 
 import Carte from "./Carte";
@@ -14,9 +15,12 @@ const normalizeDpt = dpt => {
 };
 
 const France = ({ color, highlightColor, departements }) => {
-
   const dpts = [...departements];
-  if (["75", "92", "93", "94"].filter(dpt => departements.map(d => d.toString()).includes(dpt)).length === 4) {
+  if (
+    ["75", "92", "93", "94"].filter(dpt =>
+      departements.map(d => d.toString()).includes(dpt)
+    ).length === 4
+  ) {
     dpts.push("75-92-93-94");
   }
   return (
@@ -31,10 +35,13 @@ const France = ({ color, highlightColor, departements }) => {
       ))}
     </SvgLoader>
   );
+};
 
-}
-
-France.propTypes = {};
+France.propTypes = {
+  color: PropTypes.string,
+  departements: PropTypes.array,
+  highlightColor: PropTypes.string
+};
 
 France.defaultProps = {
   color: "#74B4FF",
