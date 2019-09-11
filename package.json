@@ -13,11 +13,13 @@
     "@babel/core": "^7.4.5",
     "@babel/preset-env": "^7.4.5",
     "@babel/preset-react": "^7.0.0",
-    "@socialgouv/eslint-config-react": "^0.9.1",
+    "@socialgouv/eslint-config-react": "^0.9.7",
     "babel-jest": "^24.8.0",
+    "eslint": "^6.3.0",
     "gh-pages": "^2.0.1",
     "jest": "^24.8.0",
     "parcel-bundler": "^1.10",
+    "prettier": "^1.18.2",
     "react-test-renderer": "^16.8.6"
   },
   "dependencies": {
