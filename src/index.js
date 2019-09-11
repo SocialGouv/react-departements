@@ -3,8 +3,6 @@ import { SvgLoader, SvgProxy } from "react-svgmt";
 
 import Carte from "./Carte";
 
-console.log("Carte", Carte);
-
 const normalizeDpt = dpt => {
   if (isNaN(dpt)) {
     return dpt.toUpperCase(); // 2A, 2B
@@ -15,18 +13,26 @@ const normalizeDpt = dpt => {
   return dpt;
 };
 
-const France = ({ color, highlightColor, departements }) => (
-  <SvgLoader svgXML={Carte}>
-    <SvgProxy selector="#carte" fill={color} />
-    {departements.map(dpt => (
-      <SvgProxy
-        key={dpt}
-        selector={`#dpt-${normalizeDpt(dpt)}`}
-        fill={highlightColor}
-      />
-    ))}
-  </SvgLoader>
-);
+const France = ({ color, highlightColor, departements }) => {
+
+  const dpts = [...departements];
+  if (["75", "92", "93", "94"].filter(dpt => departements.map(d => d.toString()).includes(dpt)).length === 4) {
+    dpts.push("75-92-93-94");
+  }
+  return (
+    <SvgLoader svgXML={Carte}>
+      <SvgProxy selector="#carte" fill={color} />
+      {dpts.map(dpt => (
+        <SvgProxy
+          key={dpt}
+          selector={`#dpt-${normalizeDpt(dpt)}`}
+          fill={highlightColor}
+        />
+      ))}
+    </SvgLoader>
+  );
+
+}
 
 France.propTypes = {};
 
