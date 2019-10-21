@@ -9,7 +9,7 @@
     "dist"
   ],
   "dependencies": {
-    "react-svgmt": "^1.1.8"
+    "react-svgmt": "^1.1.9"
   },
   "devDependencies": {
     "@babel/cli": "^7.6.4",
