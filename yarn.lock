@@ -6510,10 +6510,10 @@ react-move@^2.7.0:
     prop-types "^15.6.2"
     react-lifecycles-compat "^3.0.4"
 
-react-svgmt@^1.1.8:
-  version "1.1.8"
-  resolved "https://registry.yarnpkg.com/react-svgmt/-/react-svgmt-1.1.8.tgz#c8bef2e888e9f97f2a7943bc26a578625a8a60c4"
-  integrity sha512-3xu7iWuHIbqM2hv4eMsAN1mZKz6EnXTPAcE4mMX/NwuYY5uUKJBoKDAmxY+I6KXHx2SpYJtKAqe1a5jEehteZg==
+react-svgmt@^1.1.9:
+  version "1.1.9"
+  resolved "https://registry.yarnpkg.com/react-svgmt/-/react-svgmt-1.1.9.tgz#b9f20eb5155a9a2e9d42fa9f82fa81d98fa6ba83"
+  integrity sha512-nR7GYuaKKTC/d1YaPto2U1r+Hdh7IJeEajGLbwY/QK3JOWO0xaNUgNN3+wqfoFikG+Hmfq/jde7Nrt5jE895xw==
   dependencies:
     d3-ease "^1.0.3"
     react-motion "^0.5.2"
