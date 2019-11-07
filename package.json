@@ -13,7 +13,7 @@
   },
   "devDependencies": {
     "@babel/cli": "^7.7.0",
-    "@babel/core": "^7.7.0",
+    "@babel/core": "^7.7.2",
     "@babel/preset-env": "^7.7.1",
     "@babel/preset-react": "^7.7.0",
     "@socialgouv/eslint-config-react": "^0.10.2",
