@@ -12,9 +12,9 @@
     "react-svgmt": "^1.1.9"
   },
   "devDependencies": {
-    "@babel/cli": "^7.7.5",
-    "@babel/core": "^7.7.5",
-    "@babel/preset-env": "^7.7.6",
+    "@babel/cli": "^7.7.7",
+    "@babel/core": "^7.7.7",
+    "@babel/preset-env": "^7.7.7",
     "@babel/preset-react": "^7.7.4",
     "@socialgouv/eslint-config-react": "^0.11.1",
     "babel-jest": "^24.9.0",
