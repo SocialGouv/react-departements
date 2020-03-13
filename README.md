@@ -52,3 +52,16 @@ See [example/src](./example/src).
 ## Source
 
 Le fond de carte est [issu de wikimedia et distribué sous licence Creative Commons Attribution-Share Alike](https://commons.wikimedia.org/wiki/File:Communes_france-fr.svg)
+
+## Release policy
+
+### Auto
+
+Trigger a custom build on [Travis](https://travis-ci.com/SocialGouv/react-departements) (in the "More options" right menu) on the `master` branch with a custom config:
+
+```yml
+env:
+  global:
+    - RELEASE=true
+```
+
