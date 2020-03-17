@@ -1,3 +1,10 @@
+## [2.1.1](https://github.com/SocialGouv/react-departements/compare/v2.1.0...v2.1.1) (2020-03-17)
+
+
+### Bug Fixes
+
+* **release:** add src folder in pkg release ([49914b0](https://github.com/SocialGouv/react-departements/commit/49914b026851c7382b6dc46f297bc969f48645bc))
+
 # [2.1.0](https://github.com/SocialGouv/react-departements/compare/v2.0.2...v2.1.0) (2020-03-17)
 
 
