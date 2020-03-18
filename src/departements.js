@@ -1,11 +1,12 @@
 export const normalizeDpt = dpt => {
-  if (isNaN(dpt)) {
+  const dtpNumber = Number(dpt)
+  if (isNaN(dtpNumber)) {
     return dpt.toUpperCase(); // 2A, 2B
   }
-  if (parseInt(dpt) < 10) {
+  if (dtpNumber < 10) {
     return "0" + dpt;
   }
-  return dpt;
+  return dtpNumber;
 };
 
 export const hasPetiteCouronne = departements =>
