@@ -10,5 +10,5 @@ export const normalizeDpt = dpt => {
 
 export const hasPetiteCouronne = departements =>
   ["75", "92", "93", "94"].filter(dpt =>
-    departements.map(d => d.toString()).includes(dpt)
+    departements.map(normalizeDpt).includes(normalizeDpt(dpt))
   ).length === 4;
