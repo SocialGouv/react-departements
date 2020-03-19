@@ -1,5 +1,5 @@
 export const normalizeDpt = dpt => {
-  const dtpNumber = Number(dpt;
+  const dtpNumber = Number(dpt);
   if (isNaN(dtpNumber)) {
     return dpt.toUpperCase(); // 2A, 2B
   }
