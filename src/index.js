@@ -3,26 +3,14 @@ import PropTypes from "prop-types";
 import { SvgLoader, SvgProxy } from "react-svgmt";
 
 import Carte from "./Carte";
-
-const normalizeDpt = dpt => {
-  if (isNaN(dpt)) {
-    return dpt.toUpperCase(); // 2A, 2B
-  }
-  if (parseInt(dpt) < 10) {
-    return "0" + dpt;
-  }
-  return dpt;
-};
+import { hasPetiteCouronne, normalizeDpt } from "./departements";
 
 const France = ({ color, highlightColor, departements }) => {
-  const dpts = [...departements];
-  if (
-    ["75", "92", "93", "94"].filter(dpt =>
-      departements.map(d => d.toString()).includes(dpt)
-    ).length === 4
-  ) {
-    dpts.push("75-92-93-94");
-  }
+  const dpts = [
+    ...departements,
+    ...(hasPetiteCouronne(departements) ? ["75-92-93-94"] : [])
+  ];
+
   return (
     <SvgLoader svgXML={Carte}>
       <SvgProxy selector="#carte" fill={color} />
@@ -48,4 +36,5 @@ France.defaultProps = {
   highlightColor: "#b3ff75",
   departements: []
 };
+
 export default France;
