@@ -6,7 +6,7 @@ stages:
   - build
   - Release
 
-Isntall:
+Install:
   stage: Install
   script:
     - yarn config set cache-folder $CI_PROJECT_DIR/.yarn
