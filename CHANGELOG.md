@@ -1,3 +1,21 @@
+# [3.0.0](https://github.com/SocialGouv/react-departements/compare/v2.1.1...v3.0.0) (2020-03-19)
+
+
+* build(pkg)!: export cjs and module format (#59) ([3f82e4d](https://github.com/SocialGouv/react-departements/commit/3f82e4d9199aaaccf6e3c3b94539004a1d04bb6e)), closes [#59](https://github.com/SocialGouv/react-departements/issues/59)
+
+
+### Features
+
+* **france:** separate departements functions ([#58](https://github.com/SocialGouv/react-departements/issues/58)) ([87708a1](https://github.com/SocialGouv/react-departements/commit/87708a1e9a9637459471fbc228cccf7d3fa1e0aa))
+
+
+### BREAKING CHANGES
+
+* export cjs format as main
+
+As most build tools can tree shake commonjs format, I would argue that we should provide the cjs format as default.
+The previous bundle is available under the `browser` entry.
+
 ## [2.1.1](https://github.com/SocialGouv/react-departements/compare/v2.1.0...v2.1.1) (2020-03-17)
 
 
