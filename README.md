@@ -34,7 +34,7 @@ $ yarn add react prop-types
 ## Usage
 
 ```js
-import France from "react-departements";
+import France from "@socialgouv/react-departements";
 
 <France departements={[75, 89, 21, 33, 47, 74, "2a", 976]} />;
 ```
