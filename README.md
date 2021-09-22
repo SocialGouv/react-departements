@@ -7,8 +7,6 @@
 </h3>
 
 <p align="center">
-  <a href="https://gitlab.factory.social.gouv.fr/SocialGouv/react-departements/pipelines"><img src="https://gitlab.factory.social.gouv.fr/SocialGouv/react-departements/badges/master/pipeline.svg" alt="Gitlab Master Build Status"></a>
-  <a href="https://travis-ci.com/SocialGouv/react-departements"><img src="https://travis-ci.com/SocialGouv/react-departements.svg?branch=master" alt="Travis Build Status"></a>
   <a href="https://opensource.org/licenses/Apache-2.0"><img src="https://img.shields.io/badge/License-Apache--2.0-yellow.svg" alt="License: Apache-2.0"></a>
   <a href="https://www.npmjs.com/package/@socialgouv/react-departements"><img src="https://img.shields.io/npm/v/@socialgouv/react-departements.svg" alt="Npm version"></a> 
   <br>
@@ -52,16 +50,3 @@ See [example/src](./example/src).
 ## Source
 
 Le fond de carte est [issu de wikimedia et distribué sous licence Creative Commons Attribution-Share Alike](https://commons.wikimedia.org/wiki/File:Communes_france-fr.svg)
-
-## Release policy
-
-### Auto
-
-Trigger a custom build on [Travis](https://travis-ci.com/SocialGouv/react-departements) (in the "More options" right menu) on the `master` branch with a custom config:
-
-```yml
-env:
-  global:
-    - RELEASE=true
-```
-
