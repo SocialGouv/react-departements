@@ -1,3 +1,17 @@
+# [3.1.0](https://github.com/SocialGouv/react-departements/compare/v3.0.0...v3.1.0) (2021-09-22)
+
+
+### Bug Fixes
+
+* **deps:** update minors and use github-actions ([#147](https://github.com/SocialGouv/react-departements/issues/147)) ([9c7e48d](https://github.com/SocialGouv/react-departements/commit/9c7e48de470066001d774996b7b66f231629df14))
+* remove automergeAll ([e458273](https://github.com/SocialGouv/react-departements/commit/e4582739992cac80b9c4654d5c33bea77e5910bf))
+
+
+### Features
+
+* **deps:** upgrade svgmt + tests ([#61](https://github.com/SocialGouv/react-departements/issues/61)) ([86e13b1](https://github.com/SocialGouv/react-departements/commit/86e13b1494dc41c82ade9a4e0185fd808acb0f3d))
+* **renovate:** use SocialGouv/renovate-config:light ([#134](https://github.com/SocialGouv/react-departements/issues/134)) ([68a7965](https://github.com/SocialGouv/react-departements/commit/68a7965a1597438701b7bfef2491acd91478b2e6))
+
 # [3.0.0](https://github.com/SocialGouv/react-departements/compare/v2.1.1...v3.0.0) (2020-03-19)
 
 
