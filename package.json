@@ -2,7 +2,7 @@
   "name": "@socialgouv/react-departements",
   "description": "Une carte de France où certains departements peuvent être colorés.",
   "homepage": "https://github.com/SocialGouv/react-departements#readme",
-  "version": "3.1.0",
+  "version": "3.1.1",
   "main": "cjs/index.js",
   "module": "esm/index.js",
   "browser": "dist/index.js",

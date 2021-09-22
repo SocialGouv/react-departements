@@ -1,3 +1,10 @@
+## [3.1.1](https://github.com/SocialGouv/react-departements/compare/v3.1.0...v3.1.1) (2021-09-22)
+
+
+### Bug Fixes
+
+* lint + deps ([#150](https://github.com/SocialGouv/react-departements/issues/150)) ([40e0db2](https://github.com/SocialGouv/react-departements/commit/40e0db20ca8b3bcdf1349c3f11387115188ac535))
+
 # [3.1.0](https://github.com/SocialGouv/react-departements/compare/v3.0.0...v3.1.0) (2021-09-22)
 
 
