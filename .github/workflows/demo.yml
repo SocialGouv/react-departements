@@ -1,6 +1,7 @@
 name: Demo
 
 on:
+  workflow_dispatch:
   push:
     tags:
       - v*
@@ -26,3 +27,9 @@ jobs:
 
       - name: Build demo
         run: yarn build:demo
+
+      - name: Deploy 🚀
+        uses: JamesIves/github-pages-deploy-action@4.1.0
+        with:
+          branch: gh-pages
+          folder: example/dist
