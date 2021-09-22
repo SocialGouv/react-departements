@@ -12,9 +12,21 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v2
-        with:
-          fetch-depth: 0
-          persist-credentials: false
+
+      - name: Yarn cache setup
+        uses: c-hive/gha-yarn-cache@v1
+
+      - name: Install dependencies
+        run: yarn --frozen-lockfile --prefer-offline
+
+      - name: Run tests
+        run: yarn lint
+
+      - name: Run tests
+        run: yarn test --coverage
+
+      - name: Build
+        run: yarn build
 
       - name: Semantic Release
         id: semantic
