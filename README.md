@@ -50,3 +50,4 @@ See [example/src](./example/src).
 ## Source
 
 Le fond de carte est [issu de wikimedia et distribué sous licence Creative Commons Attribution-Share Alike](https://commons.wikimedia.org/wiki/File:Communes_france-fr.svg)
+
