@@ -1,3 +1,10 @@
+## [3.1.2](https://github.com/SocialGouv/react-departements/compare/v3.1.1...v3.1.2) (2022-11-14)
+
+
+### Bug Fixes
+
+* dummy ([5fe138d](https://github.com/SocialGouv/react-departements/commit/5fe138d585039f34df8d21456dc79b76c0169a61))
+
 ## [3.1.1](https://github.com/SocialGouv/react-departements/compare/v3.1.0...v3.1.1) (2021-09-22)
 
 
