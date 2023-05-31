@@ -17,7 +17,7 @@
     "esm"
   ],
   "dependencies": {
-    "react-svgmt": "^1.1.11"
+    "react-svgmt": "^2.0.0"
   },
   "devDependencies": {
     "@babel/cli": "^7.15.7",
